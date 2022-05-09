@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
             binding.butDOT.id -> {click += "."}
         }
         if (binding.workTV.text.contains(".")){
-         binding.butDOT.isEnabled = false
+         return
         } else {
             isNewOp = false
             binding.workTV.text = click
