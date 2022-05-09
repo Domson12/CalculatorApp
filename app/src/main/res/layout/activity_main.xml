@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_weight="2"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    >
+
+
+    <TextView
+        android:id="@+id/workTV"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="444dp"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workTV">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <Button
+                android:id="@+id/butAC"
+                style="@style/button"
+                android:text="@string/ac"
+                android:onClick="acEvent"
+                android:backgroundTint="@color/specialButtonColor"
+                android:textColor="@color/black"
+                 />
+
+            <Button
+                android:id="@+id/butDEL"
+                style="@style/button"
+                android:text="@string/delete"
+                android:backgroundTint="@color/specialButtonColor"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/butPRE"
+                style="@style/button"
+                android:onClick="percentEvent"
+                android:text="@string/procent"
+                android:backgroundTint="@color/specialButtonColor"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/butDIV"
+                style="@style/button"
+                android:text="@string/divide"
+                android:onClick="operatorEvent"
+                android:backgroundTint="@color/specialButtonColor"
+                android:textColor="@color/black"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/but7"
+                style="@style/button"
+                android:onClick="buttonEvent"
+                android:text="@string/_7" />
+
+            <Button
+                android:id="@+id/but8"
+                style="@style/button"
+                android:onClick="buttonEvent"
+                android:text="@string/_8" />
+
+            <Button
+                android:id="@+id/but9"
+                style="@style/button"
+                android:onClick="buttonEvent"
+                android:text="@string/_9" />
+
+            <Button
+                android:id="@+id/butTIM"
+                style="@style/button"
+                android:text="@string/x"
+                android:onClick="operatorEvent"
+                android:backgroundTint="@color/specialButtonColor"
+                android:textColor="@color/black"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/but4"
+                style="@style/button"
+                android:onClick="buttonEvent"
+                android:text="@string/_4" />
+
+            <Button
+                android:id="@+id/but5"
+                style="@style/button"
+                android:onClick="buttonEvent"
+                android:text="@string/_5" />
+
+            <Button
+                android:id="@+id/but6"
+                style="@style/button"
+                android:onClick="buttonEvent"
+                android:text="@string/_6" />
+
+            <Button
+                android:id="@+id/butMIN"
+                style="@style/button"
+                android:text="@string/minus"
+                android:onClick="operatorEvent"
+                android:backgroundTint="@color/specialButtonColor"
+                android:textColor="@color/black"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/but1"
+                style="@style/button"
+                android:onClick="buttonEvent"
+                android:text="@string/_1" />
+
+            <Button
+                android:id="@+id/but2"
+                style="@style/button"
+                android:onClick="buttonEvent"
+                android:text="@string/_2" />
+
+            <Button
+                android:id="@+id/but3"
+                style="@style/button"
+                android:onClick="buttonEvent"
+                android:text="@string/_3" />
+
+            <Button
+                android:id="@+id/butPLU"
+                style="@style/button"
+                android:text="@string/plus"
+                android:onClick="operatorEvent"
+                android:backgroundTint="@color/specialButtonColor"
+                android:textColor="@color/black"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/butDOT"
+                style="@style/button"
+                android:text="@string/coma"
+                android:backgroundTint="@color/specialButtonColor"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/but0"
+                style="@style/button"
+                android:onClick="buttonEvent"
+                android:layout_width="10dp"
+                android:text="@string/_0" />
+
+            <Button
+                android:id="@+id/butEQU"
+                style="@style/button"
+                android:text="@string/equals"
+                android:onClick="equalEvent"
+                android:backgroundTint="@color/specialButtonColor"
+                android:textColor="@color/black"
+                android:stretchColumns="20dp"
+                />
+
+
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
