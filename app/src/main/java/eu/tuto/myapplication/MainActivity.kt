@@ -41,7 +41,6 @@ class MainActivity : AppCompatActivity() {
             binding.but8.id -> {click += "8"}
             binding.but9.id -> {click += "9"}
             binding.but0.id -> {click += "0"}
-            binding.butDOT.id -> {click += "."}
         }
         binding.workTV.text = click
     }
@@ -72,7 +71,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun acEvent(view: View) {
-        binding.workTV.text = "0"
+        binding.workTV.text = ""
         isNewOp = true
     }
 
@@ -80,5 +79,19 @@ class MainActivity : AppCompatActivity() {
         val number = binding.workTV.text.toString().toDouble()/100
         binding.workTV.text = number.toString()
         isNewOp = true
+    }
+
+    fun dotEvent(view: View) {
+        var click: String = binding.workTV.text.toString()
+        val select = view as Button
+        when(select.id){
+            binding.butDOT.id -> {click += "."}
+        }
+        if (binding.workTV.text.contains(".")){
+         binding.butDOT.isEnabled = false
+        } else {
+            isNewOp = false
+            binding.workTV.text = click
+        }
     }
 }
