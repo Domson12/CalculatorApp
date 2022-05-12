@@ -179,6 +179,7 @@
             <Button
                 android:id="@+id/butDOT"
                 style="@style/button"
+                android:layout_weight="1"
                 android:text="@string/coma"
                 android:onClick="dotEvent"
                 android:backgroundTint="@color/specialButtonColor"
@@ -189,6 +190,7 @@
                 android:id="@+id/but0"
                 style="@style/button"
                 android:onClick="buttonEvent"
+                android:layout_weight="1"
                 android:layout_width="10dp"
                 android:text="@string/_0" />
 
@@ -196,6 +198,7 @@
                 android:id="@+id/butEQU"
                 style="@style/button"
                 android:text="@string/equals"
+                android:layout_weight="3"
                 android:onClick="equalEvent"
                 android:backgroundTint="@color/specialButtonColor"
                 android:textColor="@color/black"
